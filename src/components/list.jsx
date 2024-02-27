@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles.module.css"
-import { FaTrash, FaEdit } from "react-icons/fa";
+import { FaEdit } from "react-icons/fa";
+import { FaTrash } from "react-icons/fa";
 const List = ({items,removeItem,editItem}) => {
     return(
         <div className={styles.grocerylist}>
