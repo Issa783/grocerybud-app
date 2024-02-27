@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles.module.css"
-//import { FaEdit, FaTrash} from 'react-icons/fa'
+import { FaTrash, FaEdit } from "react-icons/fa";
 const List = ({items,removeItem,editItem}) => {
     return(
         <div className={styles.grocerylist}>
@@ -9,10 +9,10 @@ const List = ({items,removeItem,editItem}) => {
             return <article className={styles.groceryitem} key={id}>
                 <p className={styles.title}>{title}</p>
                 <button type="button" className={styles.editbtn} onClick={()=>editItem(id)}>
-               
+                <FaEdit />
                 </button>
                 <button type="button" className={styles.deletebtn} onClick={()=>removeItem(id)}>
-                 
+                 <FaTrash />
                  </button>
             </article>
           })}
