@@ -275,6 +275,7 @@ Variables
   }
   .editbtn {
     color: var(--clr-green-light);
+    margin-left: auto;
   }
   .editbtn:hover {
     color: var(--clr-green-dark);
